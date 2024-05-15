@@ -1,0 +1,224 @@
+body {
+    background-color: rgb(248, 228, 202);
+    margin: 0px;
+    background-image: url(spawn.png);
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Reddit Sans Condensed", "Honk", "Yusei Magic";
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(145, 138, 138);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: rgb(233, 230, 230);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;  
+}
+.navbar a:hover{
+    background-color: rgb(116, 114, 114);
+}
+.navbar li{
+    float: left;
+   
+}
+
+#reclame1{
+    border: 1px solid;
+    height: 50px;
+    width: 700px;
+    background-color: skyblue;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 90%;
+
+    position: sticky;
+
+    top: 0px;
+    left: auto;
+
+
+}
+
+h2{
+    font-family: "Yusei Magic", "Reddit Sans Condensed";
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p{
+    font-family: "Yusei Magic", "Reddit Sans Condensed";
+    font-size: 19px;
+}
+
+#weekgek{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+#button1{
+    font-size: 20px;
+    font-family: "Honk";
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#vliegendegabber{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+#button2{
+    font-size: 20px;
+    font-family: "Honk";
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#hetmendingboekje{
+        border: 1px solid;
+        height: 12%;
+        width: 20%;
+        background-color: rgb(235, 224, 213);
+        text-align: center;
+        padding: 20px;
+        font-size: 100%;
+        border-radius: 7px;
+        margin: 2%;
+        position: absolute;
+        top: 15%;
+        left: 65%;
+}
+#button3{
+    font-size: 20px;
+    font-family: "Honk";
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#sninfor{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+#button4{
+font-size: 20px;
+font-family: "Honk";
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
+#selfie{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+#button5{
+font-size: 20px;
+font-family: "Honk";
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
+#podzol{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+#button7{
+font-size: 20px;
+font-family: "Honk";
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
+#end{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+#button6{
+font-size: 20px;
+font-family: "Honk";
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
+h4{
+    font-family: "Honk";
+}
+#start{
+    text-align: center;
+}
+
+
