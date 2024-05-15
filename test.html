@@ -7,39 +7,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title> Reclame info</title>
 </head>
+<style>.dropbtn {
+  body {
+  background-color:white;
+  font-family:Monospace;
+  font-weight:700;
+  height: 100%;
+  width: 100%;
+}
+  background-color:darkgray;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 1rem;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:darkgray;border-radius: 1rem;}
+
+.dropdown:hover .dropdown-content {display: block;border-bottom-left-radius: 1rem;border-bottom-right-radius: 1rem; border-top-right-radius: 1rem;}
+
+.dropdown:hover .dropbtn {background-color:gray;border-bottom-left-radius: 0rem; border-bottom-right-radius: 0rem;}
+</style>
+</head>
 <body>
-    <h1> Info over Gekkies (Servers) </h1>
-    <nav class="navbar">
-        <ul>
-            <li> <a href="krantenrecent.html">Recentste Krant</a></li>
-            <li> <a href="verouderdekranten.html">Verouderde Kranten</a></li>
-            <li> <a href="infogekkies.html">Info over Gekkies</a></li>
-            <li> <a href="index.html">Hoofdpagina</a></li>
-          
 
-                
+<h2>TruestLegend Website :)</h2> <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color:white;">
+<div class="dropdown">
+  <button class="dropbtn">Pages</button>
+  <div class="dropdown-content">
+    <a href="/mindstorms">Mindstorms</a>
+    <a href="/minecraft">Minecraft</a>
+    <a href="github.com/TruestLegend">Github</a>
+  </div>
+</div>
 
-           </ul>
-
-    </nav>
-
-    <main>
-        <br>
-        <table id="fontie">
-            <tr bgcolor="white">
-                <td> 2 Diamonds
-                <td> 4 Diamonds
-                <td> 10 Diamonds
-
-            <tr>
-                <td> Je wordt genoemd in de Krant
-                <td> Je wordt genoemd in krant en een Foto van je reclame zonder tekst!
-                <td> Je wordt genoemd in krant en een Foto van je reclame met Tekst                                                               
-            </table>
-
-
-    </main>
-
-    
 </body>
+</html>
 </html>
