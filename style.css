@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     background-image: url(spawn.png);
+    width: screen-width;
+    height: screen-height
 }
 main{
     margin-left: 20px;
