@@ -13,7 +13,7 @@ h1{
 }
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(145, 138, 138);
+    background-color: darkgrey;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
