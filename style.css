@@ -17,6 +17,9 @@ font{
     text-align: center;
     font-family: "Balsamiq Sans";
 }
+honk{
+    font-family:"honk";
+}
 .navbar ul{
     list-style-type: none;
     background-color: dimgrey;
