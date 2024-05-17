@@ -2,6 +2,7 @@ body {
     margin: 0px;
     width: 100%;
     height: 100%;
+    background-image:"spawn.png";
 }
 main{
     margin-left: 20px;
@@ -242,10 +243,6 @@ h4{
 }
 #unkown{
     font-family: "Nabla";
-}
-.wallpaper{
-    background-image: "spawn.png";
-    position: "sticky";
 }
 
 
