@@ -13,11 +13,7 @@ h1{
     text-align: center;
     font-family: "Reddit Sans Condensed", "Honk", "Yusei Magic";
 }
-font{
-    text-align: center;
-    font-family: "Balsamiq Sans";
-}
-honk{
+#honk{
     font-family:"honk";
 }
 .navbar ul{
