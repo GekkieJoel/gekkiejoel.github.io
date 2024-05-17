@@ -13,6 +13,10 @@ h1{
     text-align: center;
     font-family: "Reddit Sans Condensed", "Honk", "Yusei Magic";
 }
+font{
+    text-align: center;
+    font-family: "Balsamiq Sans";
+}
 .navbar ul{
     list-style-type: none;
     background-color: dimgrey;
