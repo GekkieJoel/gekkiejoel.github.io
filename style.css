@@ -1,5 +1,5 @@
 body {
-    background-image: "spawn.png";
+    background-image: url("spawn.png");
 }
 main{ 
     margin-left: 20px; 
