@@ -35,7 +35,7 @@
                 </main>
                 <script>
                     function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 6) + 1;
+                        let x = Math.floor(Math.random() * 10) + 1;
 
                                 if (x === 1) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
@@ -49,7 +49,15 @@
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Probeer: gekkiejoel.github.io/rick.html";
                                 } else if (x === 6) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "AAAAAAAAAAAAAA!";
-                                }               
+                                } else if (x === 7) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat er al 4 eerdere Gekkies Servers zijn geweest?";
+                                } else if (x === 8) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Spam bewust, 18 plus";
+                                } else if (x === 9) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Ik speel toch liever Hypixel Skyblock";
+                                } else if (x === 10) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Gekke Geit!";
+                                }                   
                     }
                     window.onload = generateRandomMessage;
 
