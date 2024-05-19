@@ -27,15 +27,16 @@
         <main>
             <h1> Gekkies Krant!</h1>
             <title> De gekkies krant!</title>
+            <link rel="icon" type="image" href="Joellizzy.png">
             <h1 id="start">Welkom In Gekkies 4 Gekkie! </h1>
             <br>
-            <h3 id="hoofdpaginatekst"> Wist je dat: de naam _atheron_ heel veel lijkt op aternos?<h3>
+            <h3 id="hoofdpaginatekst"><h3>
 
         
                 </main>
                 <script>
                     function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 11) + 1;
+                        let x = Math.floor(Math.random() * 13) + 1;
 
                                 if (x === 1) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
@@ -59,17 +60,14 @@
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Gekke Geit!";
                                 } else if (x === 11) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat we een website hebben voor de Gekkies:4 server?";
-                                }
+                                } else if (x === 12) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Luuk 1 : Joachim 0; Age of Empires Battle";
+                                } else if (x === 13) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat 1 bericht niet correct is?";
+                                } 
                     }
-                    hoofdpaginatext.onclick = generateRandomMessage;
-
-                    
+                    window.onload = generateRandomMessage;
                 </script>
-
-
-
+                <a href="flying.html"><img src="eenvlieger.png"style="width:320px;height:180px;"></a>
             </body>
-
-
 </html>
-
