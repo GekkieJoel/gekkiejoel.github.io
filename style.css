@@ -30,7 +30,7 @@ h1{
     padding: 15px;
     display: block;
     text-align: center;  
-    font-size: 48px;
+    font-family: Balsamiq Sans;
 }
 .navbar a:hover{
     background-color: rgb(116, 114, 114);
