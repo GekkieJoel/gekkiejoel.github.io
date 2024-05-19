@@ -1,50 +1,74 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
-    <title>Recentste Gekkies Krant</title>
-</head>
-<body>
-    <nav class="navbar">
-        <ul>
-            <li> <a href="index.html">Hoofd pagina</a></li>
-            <li> <a href="verouderdekranten.html">Verouderde Kranten</a></li>
-            <li> <a href="infogekkies.html">Info over Gekkies</a></li>
-            <li> <a href="krantenrecent.html">Nieuwste krant</a></li>
-           </ul>
-            <h1>Recentste gekrant</h1>
-    </nav>
-    <main>
-         <!--Hier Komt de titel van het Artikel--> 
-         <h1 class="center">Insert hier het gekste gaarste ding ooit</h1>  
-         <br>
-         <!--Hier komt een Foto-->
-         <img src="kabouters.png" height="400" class="center">
+<!DOCTYPE = html>
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Honk&display=swap" rel="stylesheet">
 
-         <br class="center">
+        </head>
+        <body>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="krantenrecent.html"><h4>Recenste Krant</h4></a></li>
+                <li> <a href="verouderdekranten.html"><h4>Verouderde Kranten</h4></a></li>
+                <li> <a href="infogekkies.html"><h4>Info over Gekkies</h4></a></li>
+                <li> <a href="index.html"> <h4>Hoofdpagina</h4></a></li>
+                
 
-         <!--Hier komt h2 tussenkopjes-->
-         <h2 class="center">Ik ben een tussenkopje</h2>
-         <br>
-         <!--Insert hier mogelijke Reclame-->
-         <p id="reclame1" class="center"> Reclame Gedoe</p>
+                    
+
+               </ul>
+
+        </nav>
+        <main>
+            <h1> Gekkies Krant!</h1>
+            <title> De gekkies krant!</title>
+            <h1 id="start">Welkom In Gekkies 4 Gekkie! </h1>
+            <br>
+            <h3 id="hoofdpaginatekst"> Wist je dat: de naam _atheron_ heel veel lijkt op aternos?<h3>
+
         
-         <br class="center">
-         <!--Hier komt het verhaal-->
-         <p class="center">Paragraaf 1</p>
-         <h2 class="center">Ik ben een tussenkopje</h2>
-         <p class="center">Paragraaf 2</p>
-         <h2 class="center">Ik ben een tussenkopje</h2>
-         <p class="center">Paragraaf 3 </p> 
-         
-         <p>Aldus, de Reporters Joellizzy en _atheron_ van de Gekkies Krant</p>
+                </main>
+                <script>
+                    function generateRandomMessage() {
+                        let x = Math.floor(Math.random() * 11) + 1;
+
+                                if (x === 1) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
+                                } else if (x === 2) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat _Atheron_ veel op Aternos lijkt?";
+                                } else if (x === 3) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Joachim heeft betere Cav Archer Micro dan Luuk!";
+                                } else if (x === 4) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wij hebben je beste vrienden in een doos, koop ze snel vrij; Wolfz, voor al u wolfen";
+                                } else if (x === 5) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Probeer: gekkiejoel.github.io/rick.html";
+                                } else if (x === 6) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "AAAAAAAAAAAAAA!";
+                                } else if (x === 7) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat er al 4 eerdere Gekkies Servers zijn geweest?";
+                                } else if (x === 8) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Spam bewust, 18 plus";
+                                } else if (x === 9) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Ik speel toch liever Hypixel Skyblock";
+                                } else if (x === 10) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Gekke Geit!";
+                                } else if (x === 11) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat we een website hebben voor de Gekkies:4 server?";
+                    }
+                    hoofdpaginatext.onclick = generateRandomMessage;
+
+                    
+                </script>
 
 
 
-    </main>
-    
-</body>
+            </body>
+
+
 </html>
+
