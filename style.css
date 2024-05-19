@@ -1,5 +1,6 @@
 body {
     background-image: url("spawn.png");
+    position: "sticky"
 }
 main{ 
     margin-left: 20px; 
