@@ -35,7 +35,7 @@
                 </main>
                 <script>
                     function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 10) + 1;
+                        let x = Math.floor(Math.random() * 11) + 1;
 
                                 if (x === 1) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
@@ -57,7 +57,8 @@
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Ik speel toch liever Hypixel Skyblock";
                                 } else if (x === 10) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Gekke Geit!";
-                                }                   
+                                } else if (x === 11) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat we een website hebben voor de Gekkies:4 server?";
                     }
                     window.onload = generateRandomMessage;
 
