@@ -36,7 +36,7 @@
                 </main>
                 <script>
                     function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 13) + 1;
+                        let x = Math.floor(Math.random() * 14) + 1;
 
                                 if (x === 1) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
@@ -64,6 +64,8 @@
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Luuk: 1 - Joachim: 0";
                                 } else if (x === 13) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat 1 bericht niet correct is?";
+                                } else if (x === 14) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Als ik geen olifanten had getraind, had ik gewonnen!";
                                 } 
                     }
                     window.onload = generateRandomMessage;
