@@ -243,5 +243,26 @@ h4{
 #unkown{
     font-family: "Nabla";
 }
+#kameelde{
+    border: 1px solid;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(235, 224, 213);
+    text-align: center;
+    padding: 20px;
+    font-size: 100%;
+    border-radius: 7px;
+    margin: 2%;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+}
+#button8{
+font-size: 20px;
+font-family: "Honk";
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
 
 
