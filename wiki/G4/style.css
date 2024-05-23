@@ -2,7 +2,7 @@ body {
     background-image: url("spawn.png");
     position: "sticky"
 }
-p {
+h1 {
    font-family: 'MinecraftiaRegular';
    font-weight: normal;
    font-style: normal;
