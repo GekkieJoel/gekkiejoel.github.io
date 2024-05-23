@@ -2,4 +2,8 @@ body {
     background-image: url("spawn.png");
     position: "sticky"
 }
-font-family: 'Minecraft', sans-serif;
+p {
+   font-family: 'MinecraftiaRegular';
+   font-weight: normal;
+   font-style: normal;
+}
