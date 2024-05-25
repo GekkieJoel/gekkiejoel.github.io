@@ -36,7 +36,7 @@
                 </main>
                 <script>
                     function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 14) + 1;
+                        let x = Math.floor(Math.random() * 15) + 1;
 
                                 if (x === 1) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
@@ -61,11 +61,13 @@
                                 } else if (x === 11) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat we een website hebben voor de Gekkies:4 server?";
                                 } else if (x === 12) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Luuk: 1 - Joachim: 0";
+                                document.getElementById("hoofdpaginatekst").innerHTML = "Luuk: 3 - Joachim: 0";
                                 } else if (x === 13) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat 1 bericht niet correct is?";
                                 } else if (x === 14) {
                                 document.getElementById("hoofdpaginatekst").innerHTML = "Als ik geen olifanten had getraind, had ik gewonnen!";
+                                } else if (x === 15) {
+                                document.getElementById("hoofdpaginatekst").innerHTML = ""Ik ben een klein persoon" -Joël Uitslag, 2024";
                                 } 
                     }
                     window.onload = generateRandomMessage;
