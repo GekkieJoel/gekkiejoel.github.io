@@ -75,4 +75,10 @@
                 <h2 style="font-family:Balsamiq Sans;" class="center">Het mending boekje</h2>
                  </figure>
                 </body>
+                <php><? 
+Session_start(); 
+$today = time(); 
+$query="INSERT into logged_in (Today, SessionID, CurrentPage, BrowserType, IP) VALUES ('".$today."','".$_SESSION['sesid']."','".$_SERVER['PHP_SELF']."','".$_SERVER['HTTP_USER_AGENT']."','".$_SERVER['REMOTE_ADDR']."')"; 
+$result = mysql_query($query); 
+?></php>
 </html>
