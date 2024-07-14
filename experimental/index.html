@@ -16,13 +16,15 @@
       let misdaad = ["Aanslag op ", "Heftig gevecht door ", "De gruwelijke dood van ", "Moord op ", "Verdacht van diefstal: ", "Verdacht van het verkopen van illegale items; Het verhaal van "];
       let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
       let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
+      let onderwerpSpelers = null
+
         
       let randomNum = Math.floor(Math.random() * 2) + 1;
       if (randomNum === 1) {
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
-        let onderwerpSpelers = null
+        
 
         let randomThings = Math.floor(Math.random() * 2) + 1;
         if (randomThings === 1) {
