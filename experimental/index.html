@@ -13,18 +13,39 @@
       const Titel = document.getElementById("Titel");
         
       let gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
-      let misdaad = ["Aanslag op ", "Heftig gevecht door ", "Ruzie zorgde voor dood door ", "Moord op ", "Verdacht van diefstal: "];
-      
+      let misdaad = ["Aanslag op ", "Heftig gevecht door ", "De gruwelijke dood van ", "Moord op ", "Verdacht van diefstal: ", "Verdacht van het verkopen van illegale items; Het verhaal van "];
+      let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
+      let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
+        
       let randomNum = Math.floor(Math.random() * 2) + 1;
       if (randomNum === 1) {
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
-        Titel.textContent = `${selectedGekkies4Spelers}`;
+        let onderwerpSpelers = " is Supergaaf";
+
+        let randomThings = Math.floor(Math.random() * 2) + 1;
+        if (randomThings === 1) {
+          //onderwerp is winkels
+          let randomWinkelGepraat = Math.floor(Math.random() * 4);
+          let onderwerpSpelers = winkels[randomWinkelGepraat];
+          
+        } else if (randomThings === 2) {
+          //onderwerp is ruzies met elkaar
+          let randomRuzieArtikel = Math.floor(Math.random() * 4);
+          let onderwerpRuzies = ruzies[randomRuzieArtikel];
+
+
+          Titel.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers} en ${selectedGekkies4Spelers}`;
+        }
+
+
+        
+        Titel.textContent = `${selectedGekkies4Spelers} ${onderwerpSpelers}`;
         
       } else if (randomNum === 2) {
 
-        let RandomMisdaad = Math.floor(Math.random() * 5);
+        let RandomMisdaad = Math.floor(Math.random() * 6);
         let SelectedMisdaad = misdaad[RandomMisdaad];
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
