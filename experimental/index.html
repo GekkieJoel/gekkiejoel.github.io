@@ -18,19 +18,19 @@
       let randomNum = Math.floor(Math.random() * 2) + 1;
       if (randomNum === 1) {
         
-        let randomGekkies4Speler = Math.floor(Math.random() * 5) + 1;
+        let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
-        Titel.textContent = '${selectedGekkies4Spelers}';
+        Titel.textContent = `${selectedGekkies4Spelers}`;
         
       } else if (randomNum === 2) {
 
-        let RandomMisdaad = Math.floor(Math.random() * 5) + 1;
+        let RandomMisdaad = Math.floor(Math.random() * 5);
         let SelectedMisdaad = misdaad[RandomMisdaad];
         
-        let randomGekkies4Speler = Math.floor(Math.random() * 5) + 1;
+        let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
         
-        Titel.textContent = '${SelectedMisdaad} ${selectedGekkies4Spelers}';
+        Titel.textContent = `${SelectedMisdaad} ${selectedGekkies4Spelers}`;
         
       }
     
