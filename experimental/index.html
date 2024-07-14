@@ -11,8 +11,25 @@
   <script>
       function updateTitleWithRandomNumber() {
       const Titel = document.getElementById("Titel");
-      let randomNum = Math.floor(Math.random() * 6) + 1;
-      Titel.textContent = `Gekkies Krants nieuwste uitvinding! Random Number: ${randomNum}`;
+        
+      let gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
+      let misdaad = ["Aanslag op ", "Heftig gevecht door ", "Ruzie zorgde voor dood door ", "Moord op ", "Verdacht van diefstal: "];
+      
+      let randomNum = Math.floor(Math.random() * 1) + 1;
+      if (randomNum === 0) {
+        
+        let randomGekkies4Speler = Math.floor(Math.random() * 5) + 1;
+        let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
+        Titel.textContent = '${selectedGekkies4Spelers}';
+        
+      } else if (randomNum === 1) {
+
+        let RandomMisdaad = Math.floor(Math.random() * 5) + 1;
+        let SelectedMisdaad = misdaad[RandomMisdaad];
+        Titel.textContent = '$(SelectedMisdaad)';
+        
+      }
+    
     }
 
     // Ensure the function runs when the window is loaded
