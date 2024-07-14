@@ -3,12 +3,21 @@
     <title> Gekkies Krant Generated!</title>
   </head>
   <body>
-    <p1> Gekkies Krants nieuwste uitvinding! </p1>
+    <p1 id = "Titel"> Gekkies Krants nieuwste uitvinding! </p1>
 
 
     
   </body>
   <script>
+      function updateTitleWithRandomNumber() {
+      const Titel = document.getElementById("Titel");
+      let randomNum = Math.floor(Math.random() * 6) + 1;
+      Titel.textContent = `Gekkies Krants nieuwste uitvinding! Random Number: ${randomNum}`;
+    }
+
+    // Ensure the function runs when the window is loaded
+    window.onload = updateTitleWithRandomNumber;
+
 
 
   </script>
