@@ -109,6 +109,9 @@
         let randomItem = Math.floor(Math.random() * 10);
         let selectedItem = mcItem[randomItem]
 
+        let randomLost = Math.floor(Math.random() * 7);
+        let selectedLost = lost_players[randomLost]
+
         let randomOptie = Math.floor(Math.random() * 3) + 1;
         if (randomOptie === 1) {
           Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${selectedGekkies4Spelers}`;
@@ -118,6 +121,12 @@
           
         } else if (randomOptie === 3) {
           Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} wordt verdacht van het ${selectedWW} van ${selectedItem}`;
+        } else if (randomOptie === 4) {
+          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers}`
+        } else if (randomOptie === 4) {
+          Titel.textContent = `Een bijnaam voor ${selectedGekkies4Spelers} is ook wel ${selectedLetter1} ${selectedLetter2}`
+        } else if (randomOptie === 5) {
+          Titel.textContent = `Vroeger had ${selectedLost} een business genaamd ${selectedLetter1} ${selectedLetter2} ${selectedLetter3}`
         }
         
       } else if (randomNum === 4) {
