@@ -23,9 +23,9 @@
       let letters1 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
       let letters2 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
       let letters3 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
-      let werkwoord = [" smokkelen", " illegaal verkopen", " verkopen", " weggeven", " gooien van illegale dingen in de zee, vooral dingen zoals", " wegwerken", " verbergen"]
-      let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"]
-
+      let werkwoord = [" smokkelen", " illegaal verkopen", " verkopen", " weggeven", " gooien van illegale dingen in de zee, vooral dingen zoals", " wegwerken", " verbergen"];
+      let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"];
+      let verdwijning = [" De Mysterieuze Verdwijning van ", " De Verdwijning van ", " het vertrek van ", " het spontane vertrek van ", " de verdwenen speler genaamd "];
         
       let randomNum = Math.floor(Math.random() * 4) + 1;
       if (randomNum === 1) {
@@ -108,13 +108,13 @@
 
         let randomOptie = Math.floor(Math.random() * 3) + 1;
         if (randomOptie === 1) {
-          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${selectedGekkies4Spelers}`
+          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${selectedGekkies4Spelers}`;
           
         } else if (randomOptie === 2) {
-          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} van ${selectedWord}`
+          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} van ${selectedWord}`;
           
         } else if (randomOptie === 3) {
-          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} wordt verdacht van het ${selectedWW} van ${selectedItem}`
+          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} wordt verdacht van het ${selectedWW} van ${selectedItem}`;
         }
         
       } else if (randomNum === 4) {
@@ -131,7 +131,23 @@
         let derde_randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedDerdeGekkies4Spelers = derde_gekkies4Spelers[derde_randomGekkies4Speler];
 
-        Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${SelectedMisdaad} ${selectedGekkies4Spelers}`
+        let randomVerdwijning = Math.floor(Math.random() * 5);
+        let selectedVerdwijning = verdwijning[randomVerdwijning]
+
+        let randomUnsolvedCase = Math.floor(Math.random() * 3) + 1;
+        if (randomUnsolvedCase === 1) {
+          //Unsolved Case 345: De aanslag op TruestLegend 
+          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${SelectedMisdaad} ${selectedGekkies4Spelers}`;
+
+        } else if (randomUnsolvedCase === 2) {
+          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedGekkies4Spelers}`; 
+          
+        } else if (randomUnsolvedCase === 3) {
+          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedGekkies4Spelers}, ${selectedTweedeGekkies4Spelers} en ${selectedDerdeGekkies4Spelers}`; 
+
+          
+        }
+
         
       }
     
