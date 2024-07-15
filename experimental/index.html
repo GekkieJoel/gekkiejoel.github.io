@@ -27,7 +27,7 @@
       let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"]
 
         
-      let randomNum = Math.floor(Math.random() * 3) + 1;
+      let randomNum = Math.floor(Math.random() * 4) + 1;
       if (randomNum === 1) {
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
@@ -116,6 +116,22 @@
         } else if (randomOptie === 3) {
           Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} wordt verdacht van het ${selectedWW} van ${selectedItem}`
         }
+        
+      } else if (randomNum === 4) {
+        let randomCaseNumber = Math.floor(Math.random() * 345) + 1;
+        let RandomMisdaad = Math.floor(Math.random() * 6);
+        let SelectedMisdaad = misdaad[RandomMisdaad];
+
+        let randomGekkies4Speler = Math.floor(Math.random() * 5);
+        let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
+        
+        let tweede_randomGekkies4Speler = Math.floor(Math.random() * 5);
+        let selectedTweedeGekkies4Spelers = tweede_gekkies4Spelers[tweede_randomGekkies4Speler];
+
+        let derde_randomGekkies4Speler = Math.floor(Math.random() * 5);
+        let selectedDerdeGekkies4Spelers = derde_gekkies4Spelers[derde_randomGekkies4Speler];
+
+        Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${SelectedMisdaad} ${selectedGekkies4Spelers}`
         
       }
     
