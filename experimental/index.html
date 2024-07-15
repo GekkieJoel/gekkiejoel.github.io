@@ -15,7 +15,7 @@
       let gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
       let tweede_gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
       let derde_gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
-      let misdaad_words = [" moord", " spionage", " 40 rijden in een 30 zone", " doodslag", " diefstal", " het uitkopen van alle winkels in de buurt"];
+      let misdaad_words = [" moord", " spionage", " 40 rijden in een 30 zone", " doodslag", " diefstal", " het leegkopen van alle winkels in de buurt"];
       let misdaad = ["Aanslag op ", "Heftig gevecht door ", "De gruwelijke dood van ", "Moord op ", "Verdacht van diefstal: ", "Verdacht van het verkopen van illegale items; Het verhaal van "];
       let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
       let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
@@ -102,7 +102,7 @@
 
         let randomOptie = Math.floor(Math.random() * 2) + 1;
         if (randomOptie === 1) {
-          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${randomGekkies4Spelers}`;
+          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${randomGekkies4Spelers}`
           
         } else if (randomOptie === 2) {
           Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} van ${selectedWord}`
