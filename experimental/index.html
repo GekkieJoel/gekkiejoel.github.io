@@ -26,6 +26,9 @@
       let werkwoord = [" smokkelen", " illegaal verkopen", " verkopen", " weggeven", " gooien van illegale dingen in de zee, vooral dingen zoals", " wegwerken", " verbergen"];
       let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"];
       let verdwijning = [" De Mysterieuze Verdwijning van ", " De Verdwijning van ", " het vertrek van ", " het spontane vertrek van ", " de verdwenen speler genaamd "];
+      let lost_players = ["Serprogame", "FloriandeMol", "DaniSou1", "Omit114712", "Raygamer9008", "KukasjeGamer", "Nielsenstef"];
+
+
         
       let randomNum = Math.floor(Math.random() * 4) + 1;
       if (randomNum === 1) {
@@ -134,16 +137,19 @@
         let randomVerdwijning = Math.floor(Math.random() * 5);
         let selectedVerdwijning = verdwijning[randomVerdwijning]
 
+        let randomLost = Math.floor(Math.random() * 7);
+        let selectedLost = lost_players[randomLost]
+
         let randomUnsolvedCase = Math.floor(Math.random() * 3) + 1;
         if (randomUnsolvedCase === 1) {
           //Unsolved Case 345: De aanslag op TruestLegend 
           Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${SelectedMisdaad} ${selectedGekkies4Spelers}`;
 
         } else if (randomUnsolvedCase === 2) {
-          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedGekkies4Spelers}`; 
+          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedLost}`; 
           
         } else if (randomUnsolvedCase === 3) {
-          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedGekkies4Spelers}, ${selectedTweedeGekkies4Spelers} en ${selectedDerdeGekkies4Spelers}`; 
+          Titel.textContent = `Unsolved Case ${randomCaseNumber}: ${selectedVerdwijning} ${selectedGekkies4Spelers}, ${selectedLost} en ${selectedDerdeGekkies4Spelers}`; 
 
           
         }
