@@ -4,6 +4,10 @@
   </head>
   <body>
     <h1 id = "Titel"> Mission Failed </h1>
+    <br>
+    <p id = "paragraaf1">
+      Heb even geduld, als je dit ziet is de site aan het laden of is er iets grondig mis met Joëls code. Zie je dit langer dan 1 minuut en heb je de pagina al gereload, neem dan contact op met Joël
+    </p>
 
 
     
@@ -32,38 +36,86 @@
         
       let randomNum = Math.floor(Math.random() * 4) + 1;
       if (randomNum === 1) {
+      //er wordt gekozen tussen 4 opties, dit zijn onderwerpen voor de krant
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
         
         let tweede_randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedTweedeGekkies4Spelers = tweede_gekkies4Spelers[tweede_randomGekkies4Speler];
-
+        //hier worden de spelers random gekozen
         let derde_randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedDerdeGekkies4Spelers = derde_gekkies4Spelers[derde_randomGekkies4Speler];
+
+        let randomRuzieArtikel = Math.floor(Math.random() * 4);
+        let onderwerpRuzies = ruzies[randomRuzieArtikel];
+
+        let randomWinkelGepraat = Math.floor(Math.random() * 4);
+        let onderwerpSpelers = winkels[randomWinkelGepraat];
+
+        let randomSamen = Math.floor(Math.random() * 4);
+        let onderwerpSamen = samen[randomSamen];
+
+        let samenOnderwerp = false;
+        let winkelOnderwerp = false;
+        let ruzieOnderwerp = false;
+
+        let players1 = true;
         
         //random dingen met gare onderwerpen die niet over misdaad gaan :o
         let randomThings = Math.floor(Math.random() * 3) + 1;
         if (randomThings === 1) {
           //onderwerp is winkels
-          let randomWinkelGepraat = Math.floor(Math.random() * 4);
-          let onderwerpSpelers = winkels[randomWinkelGepraat];
-          Titel.textContent = `${selectedGekkies4Spelers} ${onderwerpSpelers}`;
+          winkelOnderwerp = !winkelOnderwerp;
+       
+          Titel.textContent = `${selectedGekkies4Spelers} ${onderwerpSpelers}`;  
+        }
+        
           
         } else if (randomThings === 2) {
           //onderwerp is ruzies met elkaar
-          let randomRuzieArtikel = Math.floor(Math.random() * 4);
-          let onderwerpRuzies = ruzies[randomRuzieArtikel];
-
-
+          ruzieOnderwerp = !ruzieOnderwerp
+         
           Titel.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers}`;
           
         } else if (randomThings === 3) {
           //onderwerp is samen :o
-          let randomSamen = Math.floor(Math.random() * 4);
-          let onderwerpSamen = samen[randomSamen];
-
+          samenOnderwerp = !samenOnderwerp
           Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} ${onderwerpSamen}`
+          players1 = !players1;
+        }
+
+        function UpdateP1WithStupidThings() {
+        //hier veranderen we de eerste paragraaf, de inleiding
+          const P1 = document.getElementById("paragraaf1");
+          let begin_1 = ["De welbekende speler ", "De beruchte speler ", "Je kent hem vast wel, de speler ", "Speler ", "Ik denk dat jullie al weten waar het over gaat als ik de naam opnoem van speler "];
+          let zin2 = [ "Je kent hem waarschijnlijk van ", " Hij werd onlangs bekend door ", " Recentlijke deed hij deze stunt: "];
+          let plottwist = [" Maar dit was slechts voor een Youtube-prank!", " Maar hij zei echter later dat dit voor 'In Minecraft' bedoeld was!", "Maar het bleek dat hij een döppelganger had die deed heeft gedaan!", " Echter geloofd alleen 'Sinterkaas' dit."]
+
+          if (players1 === true); {
+            let randomBegin1 = Math.floor(Math.random() * 5);
+            let selectedBegin = begin_1[randomBegin1]
+
+            let randomZin2 = Math.floor(Math.random() * 3);
+            let selectedZin2 = zin2[randomZin2];
+
+            let randomPlottwist = Math.floor(Math.random() * 4);
+            let selectedPlottwist = plottwist[randomPlottwist];
+
+            if (samenOnderwerp === true) {
+              
+              Titel.textContent = `${SelectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSamen}! ${selectedPlottwist}`;
+              
+            } else if (ruzieOnderwerp === true) {
+              
+              Titel.textContent = `${SelectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpRuzies}! ${selectedPlottwist}`;
+              
+            } else if (winkelOnderwerp === true) {
+              
+              Titel.textContent = `${SelectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSpelers}! ${selectedPlottwist};`
+              
+            }
+          }
         }
 
 
@@ -71,7 +123,7 @@
         
         
       } else if (randomNum === 2) {
-
+        //onderwerp van deze sectie is misdaad
         let RandomMisdaad = Math.floor(Math.random() * 6);
         let SelectedMisdaad = misdaad[RandomMisdaad];
         
@@ -86,6 +138,7 @@
 
         let crime = Math.floor(Math.random() * 2) + 1;
         if (crime === 1) {
+          
             Titel.textContent = `${SelectedMisdaad} ${selectedGekkies4Spelers}`;
         } else if (crime === 2) {
           Titel.textContent = `${SelectedMisdaadGebouw} ${SelectedGebouw}`;
@@ -94,7 +147,7 @@
       
         
       } else if (randomNum === 3) {
-        
+        //dit gedeelte gaat over bedrijven en het voegt duizenden combinaties van afkortingen toe
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
         
@@ -143,6 +196,7 @@
         }
         
       } else if (randomNum === 4) {
+        //Unsolved cases; misdaad, maar dan unsolved
         let randomCaseNumber = Math.floor(Math.random() * 345) + 1;
         let RandomMisdaad = Math.floor(Math.random() * 6);
         let SelectedMisdaad = misdaad[RandomMisdaad];
@@ -182,7 +236,11 @@
     }
 
     // Ensure the function runs when the window is loaded
-    window.onload = updateTitleWithRandomNumber;
+    window.onload = function() {
+      updateTitleWithRandomNumber();
+      UpdateP1WithStupidThings();
+
+    };
 
 
 
