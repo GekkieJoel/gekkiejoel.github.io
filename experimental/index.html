@@ -77,6 +77,7 @@
         Titel.textContent = `${SelectedMisdaad} ${selectedGekkies4Spelers}`;
         
       } else if (randomNum === 3) {
+        
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
         
@@ -100,10 +101,10 @@
 
         let randomOptie = Math.floor(Math.random() * 2) + 1;
         if (randomOptie === 1) {
-          Titel.textContent = `De ${selectedLetter1}.${selectedLetter2}.${selectedLetter3} is het nieuwste bedrijf van ${randomGekkies4Spelers}`;
+          Titel.textContent = `De ${selectedLetter1} ${selectedLetter2} ${selectedLetter3} is het nieuwste bedrijf van ${randomGekkies4Spelers}`;
           
         } else if (randomOptie === 2) {
-          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetter1}.${selectedLetter2}.${selectedLetter3}. van ${selectedWord}`
+          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetter1} ${selectedLetter2} ${selectedLetter3}. van ${selectedWord}`
           
         }
         
