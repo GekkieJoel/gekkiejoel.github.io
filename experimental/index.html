@@ -13,6 +13,8 @@
       const Titel = document.getElementById("Titel");
         
       let gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
+      let tweede_gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
+      let derde_gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
       let misdaad = ["Aanslag op ", "Heftig gevecht door ", "De gruwelijke dood van ", "Moord op ", "Verdacht van diefstal: ", "Verdacht van het verkopen van illegale items; Het verhaal van "];
       let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
       let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
@@ -23,6 +25,12 @@
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
+        
+        let tweede_randomGekkies4Speler = Math.floor(Math.random() * 5);
+        let selectedTweedeGekkies4Spelers = tweede_gekkies4Spelers[tweede_randomGekkies4Speler];
+
+        let derde_randomGekkies4Speler = Math.floor(Math.random() * 5);
+        let selectedDerdeGekkies4Spelers = derde_gekkies4Spelers[derde_randomGekkies4Speler];
         
 
         let randomThings = Math.floor(Math.random() * 2) + 1;
@@ -38,14 +46,14 @@
           let onderwerpRuzies = ruzies[randomRuzieArtikel];
 
 
-          Titel.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers} en ${selectedGekkies4Spelers}`;
+          Titel.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers}`;
           
         } else if (randomThings === 3) {
           //onderwerp is samen :o
           let randomSamen = Math.floor(Math.random() * 4);
           let onderwerpSamen = samen[randomSamen];
 
-          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedGekkies4Spelers} ${onderwerpSamen}`
+          Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} ${onderwerpSamen}`
         }
 
 
