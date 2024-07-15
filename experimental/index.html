@@ -27,8 +27,8 @@
       let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"];
       let verdwijning = [" De Mysterieuze Verdwijning van ", " De Verdwijning van ", " het vertrek van ", " het spontane vertrek van ", " de verdwenen speler genaamd "];
       let lost_players = ["Serprogame", "FloriandeMol", "DaniSou1", "Omit114712", "Raygamer9008", "KukasjeGamer", "Nielsenstef"];
-
-
+      let gebouwen = [" De McJonalds-Toren", "De Kameel", "Fish 'n Bits", "Wankers Wood", "Wolfz"];
+      let misdaadGebouw = ["Vliegtuig Aanslag op ", "Overval bij ", "Dodelijk Incident bij ", "Diefen stalen alles bij ", "Supergaaf is "]
         
       let randomNum = Math.floor(Math.random() * 4) + 1;
       if (randomNum === 1) {
@@ -77,8 +77,21 @@
         
         let randomGekkies4Speler = Math.floor(Math.random() * 5);
         let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
+
+        let randomGebouw = Math.floor(Math.random() * 5);
+        let SelectedGebouw = gebouwen[randomGebouw];
+
+        let randomMisdaadGebouw = Math.floor(Math.random() * 5);
+        let SelectedMisdaadGebouw = misdaadGebouw[randomMisdaadGebouw];
+
+        let crime = Math.floor(Math.random() * 2) + 1;
+        if (crime === 1) {
+            Titel.textContent = `${SelectedMisdaad} ${selectedGekkies4Spelers}`;
+        } else if (crime === 2) {
+          Titel.textContent = `${SelectedMisdaadGebouw} ${SelectedGebouw}`;
+        }
         
-        Titel.textContent = `${SelectedMisdaad} ${selectedGekkies4Spelers}`;
+      
         
       } else if (randomNum === 3) {
         
