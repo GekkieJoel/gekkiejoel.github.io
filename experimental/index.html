@@ -16,7 +16,6 @@
       let misdaad = ["Aanslag op ", "Heftig gevecht door ", "De gruwelijke dood van ", "Moord op ", "Verdacht van diefstal: ", "Verdacht van het verkopen van illegale items; Het verhaal van "];
       let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
       let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
-      let onderwerpSpelers = " is Supergaaf"
 
         
       let randomNum = Math.floor(Math.random() * 2) + 1;
@@ -31,6 +30,7 @@
           //onderwerp is winkels
           let randomWinkelGepraat = Math.floor(Math.random() * 4);
           let onderwerpSpelers = winkels[randomWinkelGepraat];
+          Titel.textContent = `${selectedGekkies4Spelers} ${onderwerpSpelers}`;
           
         } else if (randomThings === 2) {
           //onderwerp is ruzies met elkaar
@@ -43,7 +43,7 @@
 
 
         
-        Titel.textContent = `${selectedGekkies4Spelers} ${onderwerpSpelers}`;
+        
         
       } else if (randomNum === 2) {
 
