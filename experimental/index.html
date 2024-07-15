@@ -155,7 +155,18 @@
                 let randomMCItem = Math.floor(Math.random() * 10);
                 let selectedMCItem = mcItem[randomMCItem];
 
-                Titel.textContent = `${onderwerpMisdaad} ${selectedGekkies4Spelers}, ${selectedTweedeGekkies4Spelers} en ${selectedDerdeGekkies4Spelers}!`;
+                let randomAfkorting = Math.floor(Math.random() * 4) + 1;
+                if (randomAfkorting === 1) {
+                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} van ${onderwerpMisdaad_woord}`;
+                } else if (randomAfkorting === 2) {
+                    Titel.textContent = `${selectedGekkies4Spelers}'s nieuwste bedrijf: de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3}`;
+                } else if (randomAfkorting === 3) {
+                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} hebben samen de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} opgericht`
+                } else if (randomAfkorting === 4) {
+                    Titel.textContent = `De ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} verkoopt dingen zoals ${selectedMCItem}`
+                }
+
+             
                 const P1 = document.getElementById("paragraaf1");
                 P1.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} zijn recentelijk betrapt op ${selectedWerkwoord} van ${selectedMCItem}. Het politieonderzoek, met codenaam ${selectedLetters1} ${selectedLetters2} ${selectedLetters3}, is nog bezig. Als u ${selectedDerdeGekkies4Spelers} ziet, neem dan contact op met de autoriteiten.`;
             } else if (randomNum === 3) {
