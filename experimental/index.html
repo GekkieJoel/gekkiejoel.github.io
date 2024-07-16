@@ -306,15 +306,15 @@
                 P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} is nog steeds in shock door de gebeurtenis.`;
                 const Tk1 = document.getElementById("tussenkop1");
 
-                if (randomMisdaadGebouw === 1) {
+                if (randomMisdaadGebouw === 0) {
                     Tk1.textContent = `${selectedGevaarVerduidelijker} vliegtuig aanslag op ${selectedGebouw}`;
-                } else if (randomMisdaadGebouw === 2) {
+                } else if (randomMisdaadGebouw === 1) {
                     Tk1.textContent = `Gewapende overval bij ${selectedGebouw}`;
-                } else if (randomMisdaadGebouw === 3) {
+                } else if (randomMisdaadGebouw === 2) {
                     Tk1.textContent = `Incident bij ${selectedGebouw} zorgt voor doden`;
-                } else if (randomMisdaadGebouw === 4) {
+                } else if (randomMisdaadGebouw === 3) {
                     Tk1.textContent = `Alles leeggeroofd bij ${selectedGebouw}`;
-                } else if (randomMisdaadGebouw === 5) {
+                } else if (randomMisdaadGebouw === 4) {
                     Tk1.textContent = `${selectedGevaarVerduidelijker} brand bij ${selectedGebouw}`;
                 }
             }
