@@ -270,6 +270,7 @@
                 Titel.textContent = `${onderwerpVerdwijning} ${selectedLostPlayer}`;
                 const P1 = document.getElementById("paragraaf1");
                 P1.textContent = `Niemand heeft ${selectedLostPlayer} meer gezien sinds ${selectedLostPlayer} verdween. Volgens ${selectedGekkies4Spelers} is er iets vreemds aan de hand.`;
+                
             } else if (randomNum === 4) {
                 let randomMisdaadGebouw = Math.floor(Math.random() * 5);
                 let onderwerpMisdaadGebouw = misdaadGebouw[randomMisdaadGebouw];
@@ -280,9 +281,26 @@
                 let randomGekkies4Speler = Math.floor(Math.random() * 5);
                 let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
 
+                let tijd = ["Gisteren ", "Vandaag ", "Een week geleden ", "Vorig jaar ", "Afgelopen maandag "];
+                let randomTijd = Math.floor(Math.random() * 5);
+                let selectedTijd = tijd[randomTijd];
+
+                let randomTijdUren = Math.floor(Math.random() * 12);
+
+                let randomTijdMinuten = Math.floor(Math.random() * 59) + 1;
+
+                let wanneer = [" 's ochtends", " 's avonds", " 's nachts", " 's middags"];
+                let randomWanneer = Math.floor(Math.random() * 4);
+                let selectedWanneer = wanneer[randomWanneer];
+
                 Titel.textContent = `${onderwerpMisdaadGebouw} ${selectedGebouw}`;
                 const P1 = document.getElementById("paragraaf1");
-                P1.textContent = `Gisteren om 3:30 's ochtends, was er een grote aanval bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} is nog steeds in shock door de gebeurtenis.`;
+                let chooseThingie = Math.floor(Math.random() * 2) + 1;
+                if (chooseThingie === 1) {
+                    P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} is nog steeds in shock door de gebeurtenis.`;
+                } else if (chooseThingie === 2) {
+                    P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} zijn nog steeds in shock door de gebeurtenis.`;
+                }
             }
         }
 
