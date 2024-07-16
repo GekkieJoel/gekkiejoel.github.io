@@ -25,9 +25,9 @@
             let winkels = [" heeft een nieuwe winkel geopend!", " maakte eindelijk een redstonewinkel!", " heeft een busje met Free Candy geopend!", " heeft de meeste spullen van iedereen verkocht!"];
             let ruzies = ["Een heftige ruzie tussen ", "Een nieuwe winkel is geopend door ", "De georganiseerde aanslag van ", "De beruchste Gekkies 4 Spelers: "];
             let samen = [" hebben samen een winkel geopend!", " hebben na een heftig gevecht, vrede gesloten", " hebben last van supergaafheid!", " visten."];
-            let letters1 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
-            let letters2 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
-            let letters3 = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J.", "K.", "L.", "M.", "N.", "O.", "P.", "Q.", "R.", "S.", "T.", "U.", "V.", "W.", "X.", "Y.", "Z."];
+            let letters1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+            let letters2 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+            let letters3 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
             let werkwoord = [" smokkelen", " illegaal verkopen", " verkopen", " weggeven", " gooien van illegale dingen in de zee, vooral dingen zoals", " wegwerken", " verbergen"];
             let mcItem = [" Sligthly Weathered Cut Copper Stair", " Redstone", " Mangrove wood en Jungle Wood", " Porkchop", " Wolfz Wolven", " Cactus", " Raw Salmon", "Cooked Cod", " Tropical fish in a bucket", " Tridents"];
             let verdwijning = [" De Mysterieuze Verdwijning van ", " De Verdwijning van ", " het vertrek van ", " het spontane vertrek van ", " de verdwenen speler genaamd "];
@@ -179,45 +179,45 @@
                 if (randomAfkorting === 1) {
                     
                     let verdenken = true;
-                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} van ${onderwerpMisdaad_woord}`;
+                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdenken de ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. van ${onderwerpMisdaad_woord}`;
                     const P1 = document.getElementById("paragraaf1");
-                    P1.textContent = `De ${selectedReputatie} spelers ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdachten het bedrijf ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} van de speler ${selectedDerdeGekkies4Spelers} al een tijdje van ${onderwerpMisdaad_woord}. Ze konden echter niks vinden, tot nu`;
+                    P1.textContent = `De ${selectedReputatie} spelers ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} verdachten het bedrijf ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. van de speler ${selectedDerdeGekkies4Spelers} al een tijdje van ${onderwerpMisdaad_woord}. Ze konden echter niks vinden, tot nu`;
                     const Tk1 = document.getElementById("tussenkop1");
-                    Tk1.textContent = `De ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} en ${selectedPraktijk}`;
+                    Tk1.textContent = `De ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. en ${selectedPraktijk}`;
 
                     
                 } else if (randomAfkorting === 2) {
                     let bedrijf_alleen = true;
-                    Titel.textContent = `${selectedGekkies4Spelers}'s nieuwste bedrijf: de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3}`;
+                    Titel.textContent = `${selectedGekkies4Spelers}'s nieuwste bedrijf: de ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}.`;
                     const P1 = document.getElementById("paragraaf1");
                     P1.textContent = `${selectedGekkies4Spelers} wou altijd al een bedrijf starten, nu heeft hij een bedrijf gestart waar hij ${selectedMCItem} verkoopt. Hoe hij dit heeft gedaan, lees je hier.`;
                     const Tk1 = document.getElementById("tussenkop1");
                     let randomBedrijfAlleen = Math.floor(Math.random() * 3) + 1;
                     if (randomBedrijfAlleen === 1) {
-                        Tk1.textContent = `Het begin van de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3}`;
+                        Tk1.textContent = `Het begin van de ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}.`;
                         
                     } else if (randomBedrijfAlleen === 2) {
-                    Tk1.textContent = `${selectedLetters1} ${selectedLetters2} ${selectedLetters3}; ${selectedGekkies4Spelers}'s weg naar succes`;
+                    Tk1.textContent = `${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}.; ${selectedGekkies4Spelers}'s weg naar succes`;
                         
                     } else if (randomBedrijfAlleen === 3) {
-                        Tk1.textContent = `${selectedGekkies4Spelers} en de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3}`;
+                        Tk1.textContent = `${selectedGekkies4Spelers} en de ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}.`;
                     }
                     
                 } else if (randomAfkorting === 3) {
                     let bedrijf_samen = true;
-                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} hebben samen de ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} opgericht`;
+                    Titel.textContent = `${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} hebben samen de ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. opgericht`;
                      const P1 = document.getElementById("paragraaf1");
                      P1.textContent = `"${selectedUitspraak}" aldus ${selectedGekkies4Spelers}, die recentelijk een bedrijf heeft gestart samen met ${selectedTweedeGekkies4Spelers}. Ze zijn expert in ${selectedMCItem}`;
                     const Tk1 = document.getElementById("tussenkop1");
-                    Tk1.textContent = ``
+                    Tk1.textContent = `Hoe ${selectedTweedeGekkies4Spelers} en ${selectedGekkies4Spelers} samen een bedrijf opende`
 
                 } else if (randomAfkorting === 4) {
                     let shady_business = true;
-                    Titel.textContent = `De ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} wordt verdacht van het ${selectedWerkwoord} van ${selectedMCItem}`;
+                    Titel.textContent = `De ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. wordt verdacht van het ${selectedWerkwoord} van ${selectedMCItem}`;
                     const P1 = document.getElementById("paragraaf1");
-                    P1.textContent = `Al een tijdje legde ${selectedDerdeGekkies4Spelers} het bedrijf ${selectedLetters1} ${selectedLetters2} ${selectedLetters3} onder de loep. Maar hij kon niks verdachts vinden over het bedrijf van ${selectedGekkies4Spelers}. Maar dat veranderde vandaag.`;
+                    P1.textContent = `Al een tijdje legde ${selectedDerdeGekkies4Spelers} het bedrijf ${selectedLetters1}. ${selectedLetters2}. ${selectedLetters3}. onder de loep. Maar hij kon niks verdachts vinden over het bedrijf van ${selectedGekkies4Spelers}. Maar dat veranderde vandaag.`;
                     const Tk1 = document.getElementById("tussenkop1");
-                    Tk1.textContent = ``
+                    Tk1.textContent = `${selectedWerkwoord} van ${selectedMCItem}`
 
                 }
 
