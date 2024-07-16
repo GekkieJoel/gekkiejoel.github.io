@@ -17,8 +17,11 @@
     <p id = "paragraaf2">
         Geduld is een schone zaak, tenzij Joëls code verkeerd is gegaan :D
     </p>
+
+    
     <script>
         function updateTitleWithRandomNumber() {
+            //capture screehshot ook Joel remember!
             const Titel = document.getElementById("Titel");
 
             let gekkies4Spelers = ["Joellizzy", "Joa04", "TruestLegend", "_atheron_", "UbelsFamilie"];
@@ -69,6 +72,8 @@
 
                 let players1 = true;
 
+                const Tk1 = document.getElementById("tussenkop1");
+
                 //random dingen met gare onderwerpen die niet over misdaad gaan :o
                 if (randomThings === 1) {
                     //onderwerp is winkels
@@ -106,10 +111,16 @@
 
                         if (samenOnderwerp) {
                             P1.textContent = `${selectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSamen}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpSamen} ${selectedGekkies4Spelers}`;
                         } else if (ruzieOnderwerp) {
                             P1.textContent = `${selectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpRuzies}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers}`;
                         } else if (winkelOnderwerp) {
                             P1.textContent = `${selectedBegin} ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSpelers}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpSpelers} ${selectedGekkies4Spelers}`;
                         }
                     } else if (!players1) {
                         let randomBegin1 = Math.floor(Math.random() * 5);
@@ -122,11 +133,17 @@
                         let selectedPlottwist = plottwist[randomPlottwist];
 
                         if (samenOnderwerp) {
-                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers}! ${selectedZin2} ${onderwerpSamen}! ${selectedPlottwist}`;
+                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers} en ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSamen}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpSamen} ${selectedGekkies4Spelers} en ${selectedGekkies4Spelers}`;
                         } else if (ruzieOnderwerp) {
-                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers}! ${selectedZin2} ${onderwerpRuzies}! ${selectedPlottwist}`;
+                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers} en ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpRuzies}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpRuzies} ${selectedGekkies4Spelers}`;
                         } else if (winkelOnderwerp) {
-                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers}! ${selectedZin2} ${onderwerpSpelers}! ${selectedPlottwist}`;
+                            P1.textContent = `${selectedBegin} ${selectedTweedeGekkies4Spelers} en ${selectedGekkies4Spelers}! ${selectedZin2} ${onderwerpSpelers}! ${selectedPlottwist}`;
+                            const Tk1 = document.getElementById("tussenkop1");
+                            Tk1.textContent = `${onderwerpSpelers} ${selectedGekkies4Spelers}`;
                         }
                     }
                 }
@@ -274,7 +291,7 @@
 
                 let randomBackstory = Math.floor(Math.random() * 3) + 1;
                 if (randomBackstory === 1) {
-                Tk1.textContent = `Wie was ${selectedLostPlayer}`;
+                Tk1.textContent = `Wie was ${selectedLostPlayer}?`;
                 } else if (randomBackstory === 2) {
                     Tk1.textContent = `Het verhaal van ${selectedLostPlayer}`;
                 } else if (randomBackstory === 3) {
