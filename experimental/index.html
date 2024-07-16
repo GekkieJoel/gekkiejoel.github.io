@@ -281,8 +281,6 @@
                 let randomGekkies4Speler = Math.floor(Math.random() * 5);
                 let selectedGekkies4Spelers = gekkies4Spelers[randomGekkies4Speler];
 
-                let randomTweedeGekkies4Speler = Math.floor(Math.random() * 5);
-                let selectedTweedeGekkies4Spelers = tweede_gekkies4Spelers[selectedTweedeGekkies4Spelers];
 
                 let tijd = ["Gisteren ", "Vandaag ", "Een week geleden ", "Vorig jaar ", "Afgelopen maandag "];
                 let randomTijd = Math.floor(Math.random() * 5);
@@ -299,11 +297,7 @@
                 Titel.textContent = `${onderwerpMisdaadGebouw} ${selectedGebouw}`;
                 const P1 = document.getElementById("paragraaf1");
                 let chooseThingie = Math.floor(Math.random() * 2) + 1;
-                if (chooseThingie === 1) {
-                    P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} is nog steeds in shock door de gebeurtenis.`;
-                } else if (chooseThingie === 2) {
-                    P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} en ${selectedTweedeGekkies4Spelers} zijn nog steeds in shock door de gebeurtenis.`;
-                }
+                P1.textContent = `${selectedTijd} om ${randomTijdUren}:${randomTijdMinuten} ${selectedWanneer}, was er een incident bij ${selectedGebouw}. Niemand is gewond geraakt, maar ${selectedGekkies4Spelers} is nog steeds in shock door de gebeurtenis.`;
             }
         }
 
