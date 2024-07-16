@@ -270,6 +270,16 @@
                 Titel.textContent = `${onderwerpVerdwijning} ${selectedLostPlayer}`;
                 const P1 = document.getElementById("paragraaf1");
                 P1.textContent = `Niemand heeft ${selectedLostPlayer} meer gezien sinds ${selectedLostPlayer} verdween. Volgens ${selectedGekkies4Spelers} is er iets vreemds aan de hand.`;
+                const Tk1 = document.getElementById("tussenkop1");
+
+                let randomBackstory = Math.floor(Math.random() * 3) + 1;
+                if (randomBackstory === 1) {
+                Tk1.textContent = `Wie was ${selectedLostPlayer}`;
+                } else if (randomBackstory === 2) {
+                    Tk1.textContent = `Het verhaal van ${selectedLostPlayer}`;
+                } else if (randomBackstory === 3) {
+                    Tk1.textContent = `${selectedLostPlayer}'s tijd op de Gekkies Servers`;
+                }
                 
             } else if (randomNum === 4) {
                 let randomMisdaadGebouw = Math.floor(Math.random() * 5);
