@@ -29,13 +29,12 @@
         const typedPassword = document.getElementById('ww').value;
 
         if (correctPasswords.includes(typedPassword)) {
-          // Password is correct, remove it from the correctPasswords array and add to usedPasswords
           correctPasswords = correctPasswords.filter(password => password !== typedPassword);
           usedPasswords.push(typedPassword);
           localStorage.setItem('usedPasswords', JSON.stringify(usedPasswords));
-          document.getElementById('result').innerText = "Password is correct!";
+          document.getElementById('result').innerText = "Oké! Je wordt zo doorgestuurd!";
         } else {
-          document.getElementById('result').innerText = "Password is incorrect or already used.";
+          document.getElementById('result').innerText = "Het spijt me, maar deze code bestaat niet of je hebt hem al eerder gebruikt.";
         }
       }
     </script>
