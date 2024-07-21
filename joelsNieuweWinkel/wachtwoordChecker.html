@@ -1,43 +1,43 @@
 <html>
   <head>
-    <title> Joëls Wachtwoord-Checker</title>
-
+    <title>Joëls Wachtwoord-Checker</title>
     <style>
       .center {
-        text-align = center;
+        text-align: center;
       }
-
-
     </style>
-
   </head>
   <body>
-    <div class ="center">
+    <div class="center">
       <label for="ww">Code: </label>
-
-      <input type ="text" id ="ww" name ="ww">
-
-      <button onclick ="checkWW()">Verstuur </button>
-      <p id ="supergaaf"> ... </p>
+      <input type="password" id="ww" name="ww">
+      <button onclick="checkPassword()">Submit</button>
+      <p id="result"></p>
     </div>
 
+    <script>
+      // Initial correct passwords
+      let correctPasswords = ["password1", "password2", "password3"];
 
-  
+      // Load used passwords from localStorage
+      const usedPasswords = JSON.parse(localStorage.getItem('usedPasswords')) || [];
 
-  <script>
-    function checkWW() {
-      let correctWW = ["SUPERGAAF", "KAAS", "1234"];
-      let typedWW = document.getElementById('ww').value;
+      // Remove used passwords from correctPasswords
+      correctPasswords = correctPasswords.filter(password => !usedPasswords.includes(password));
 
-      if (correctWW.includes(typedWW)) {
-        document.getElementById('supergaaf').innerText = "correct";
-      } else {
-        document.getElementById('supergaaf').innerText = "loser";
+      function checkPassword() {
+        const typedPassword = document.getElementById('ww').value;
+
+        if (correctPasswords.includes(typedPassword)) {
+          // Password is correct, remove it from the correctPasswords array and add to usedPasswords
+          correctPasswords = correctPasswords.filter(password => password !== typedPassword);
+          usedPasswords.push(typedPassword);
+          localStorage.setItem('usedPasswords', JSON.stringify(usedPasswords));
+          document.getElementById('result').innerText = "Password is correct!";
+        } else {
+          document.getElementById('result').innerText = "Password is incorrect or already used.";
+        }
       }
-    }
-
-
-
-  </script>
+    </script>
   </body>
 </html>
