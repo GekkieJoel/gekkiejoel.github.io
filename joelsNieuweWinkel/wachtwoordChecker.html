@@ -16,14 +16,28 @@
       <label for="ww">Code: </label>
 
       <input type ="text" id ="ww" name ="ww">
+
+      <button onclick ="checkWW()">Verstuur </button>
+      <p id ="supergaaf"> ... </p>
     </div>
 
 
-  </body>
+  
 
   <script>
+    function checkWW() {
+      let correctWW = ["SUPERGAAF", "KAAS", "1234"];
+      let typedWW = document.getElementById('ww').value;
+
+      if (correctWW.includes(typedWW)) {
+        document.getElementById('supergaaf').innerText = "correct";
+      } else {
+        document.getElementById('supergaaf').innerText = "loser";
+      }
+    }
 
 
 
   </script>
+  </body>
 </html>
