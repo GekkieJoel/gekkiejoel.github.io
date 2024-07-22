@@ -29,7 +29,7 @@
 
     <script>
       // Initial correct passwords
-      let correctPasswords = ["KAAS", "SUPERGAAF", "1234", "4TG2", "4J8I", "gaar", "lol"];
+      let correctPasswords = ["KAAS", "SUPERGAAF", "1234", "4TG2", "4J8I", "gaar", "lol", "test", "test1", "test2"];
 
       // Load used passwords from localStorage
       const usedPasswords = JSON.parse(localStorage.getItem('usedPasswords')) || [];
@@ -45,7 +45,10 @@
           usedPasswords.push(typedPassword);
           localStorage.setItem('usedPasswords', JSON.stringify(usedPasswords));
           document.getElementById('result').innerText = "Oké! Je wordt zo doorgestuurd!";
-          window.location.href = "gekkiejoel.github.io/index.html"
+          setTimeout(() => {
+            window.location.href = "gekkiejoel.github.io/index.html"
+          }, 2000); //2 seconden voordat je wordt doorgestuurd
+          
         } else {
           document.getElementById('result').innerText = "Het spijt me, maar deze code bestaat niet of je hebt hem al eerder gebruikt.";
         }
