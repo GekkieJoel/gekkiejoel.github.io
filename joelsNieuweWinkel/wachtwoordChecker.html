@@ -15,6 +15,13 @@
         border-radius: 30%;
         
       }
+      .hidden {
+        text-align: center;
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -27,7 +34,7 @@
     </div>
     <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-    <div class="center">
+    <div id="secret" class="hidden">
       <button class="round"> Waah</button>
 
     </div>
@@ -49,6 +56,8 @@
           correctPasswords = correctPasswords.filter(password => password !== typedPassword);
           usedPasswords.push(typedPassword);
           localStorage.setItem('usedPasswords', JSON.stringify(usedPasswords));
+          document.getElementById('secret').classList.remove(hidden);
+          document.getElementById('secret').classList.add(visible);
           document.getElementById('result').innerText = "Oké! Je wordt zo doorgestuurd!";
         } else {
           document.getElementById('result').innerText = "Het spijt me, maar deze code bestaat niet of je hebt hem al eerder gebruikt.";
