@@ -15,13 +15,6 @@
         border-radius: 30%;
         
       }
-      .hidden {
-        text-align: center;
-        display: none;
-      }
-      .visible {
-        display: block;
-      }
     </style>
   </head>
   <body>
@@ -33,11 +26,6 @@
       <p id="result"></p>
     </div>
     <br> <br> <br> <br> <br> <br> <br> <br> <br>
-
-    <div id="secret" class="hidden">
-      <button class="round"> Waah</button>
-
-    </div>
 
     <script>
       // Initial correct passwords
@@ -56,9 +44,8 @@
           correctPasswords = correctPasswords.filter(password => password !== typedPassword);
           usedPasswords.push(typedPassword);
           localStorage.setItem('usedPasswords', JSON.stringify(usedPasswords));
-          document.getElementById('secret').classList.remove(hidden);
-          document.getElementById('secret').classList.add(visible);
           document.getElementById('result').innerText = "Oké! Je wordt zo doorgestuurd!";
+          window.location.href = "gekkiejoel.github.io/index.html"
         } else {
           document.getElementById('result').innerText = "Het spijt me, maar deze code bestaat niet of je hebt hem al eerder gebruikt.";
         }
