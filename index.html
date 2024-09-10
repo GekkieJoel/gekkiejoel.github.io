@@ -30,48 +30,46 @@
             <link rel="icon" type="image" href="Joellizzy.png">
             <h1 id="start">Welkom In Gekkies 4 Gekkie! </h1>
             <br>
-            <h3 id="hoofdpaginatekst"> Als je dit ziet ben je Supergaaf (en een hacker)<h3>
+            <h3 id="superkaas"> Als je dit ziet ben je Supergaaf (en een hacker)<h3>
 
         
                 </main>
                 <script>
-                    function generateRandomMessage() {
-                        let x = Math.floor(Math.random() * 15) + 1;
-
-                                if (x === 1) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Allo";
-                                } else if (x === 2) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat _Atheron_ veel op Aternos lijkt?";
-                                } else if (x === 3) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Joachim heeft betere Cav Archer Micro dan Luuk!";
-                                } else if (x === 4) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Wij hebben je beste vrienden in een doos, koop ze snel vrij; Wolfz, voor al u wolfen";
-                                } else if (x === 5) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Probeer: gekkiejoel.github.io/rick.html";
-                                } else if (x === 6) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "AAAAAAAAAAAAAA!";
-                                } else if (x === 7) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat er al 4 eerdere Gekkies Servers zijn geweest?";
-                                } else if (x === 8) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Spam bewust, 18 plus";
-                                } else if (x === 9) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Ik speel toch liever Hypixel Skyblock";
-                                } else if (x === 10) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Gekke Geit!";
-                                } else if (x === 11) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat we een website hebben voor de Gekkies:4 server?";
-                                } else if (x === 12) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Luuk: 3 - Joachim: 0";
-                                } else if (x === 13) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Wist je dat 1 bericht niet correct is?";
-                                } else if (x === 14) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = "Als ik geen olifanten had getraind, had ik gewonnen!";
-                                } else if (x === 15) {
-                                document.getElementById("hoofdpaginatekst").innerHTML = ""Ik ben een klein persoon" -Joël Uitslag, 2024";
-                                } 
-                    }
-                    window.onload = generateRandomMessage;
-
+                     function updateTitleWithRandomNumber() {
+                            const changer = document.getElementById("superkaas");
+                
+                            let bericht = ["Hallo allemaal!", "Niels vond dat ik dit ding moets fixen, misschien werkt het nu?", "Ik vergeet vaak dat deze website bestaat, eigenlijk", "De server wacht!", "Mensen zeggen dat ik gaar ben, is dat zo?", "Test, test... Hello World!", "Gekkies Website is terug van nooit weggeweest!"];
+                            let gekkiesSpelers = ["Mechmanner", "_atheron_", "Joa04", "Joellizzy", "nijnt", "UbelsFamilie", "serprogame"]
+                            let anderBerichtVariant = [" speelt ook op de Gekkies Server!", " is ook een Gekkie!"]
+                
+                            let randomNumBericht = Math.floor(Math.random() * 2) + 1;
+                            
+                
+                            if (randomNumBericht === 1) {
+                
+                                let randomBericht = Math.floor(Math.random() * 7);
+                                let selectedBericht = bericht[randomBericht];
+                
+                                changer.textContent = `${selectedBericht}`;
+                
+                            } else if (randomNumBericht === 2) {
+                                let randomSpeler = Math.floor(Math.random() * 7);
+                                let selectedSpeler = gekkiesSpelers[randomSpeler];
+                
+                                let randomBerichtVaria = Math.floor(Math.random() * 2);
+                                let selectedBerichtVaria1 = anderBerichtVariant[randomBerichtVaria]
+                            
+                
+                
+                                changer.textContent = `${selectedSpeler} ${selectedBerichtVaria1}`;
+                
+                            }
+                
+                
+                
+                        }
+                
+                    window.addEventListener('load', updateTitleWithRandomNumber);
                     
                 </script>
 
