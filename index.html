@@ -40,14 +40,14 @@
                 
                             let bericht = ["Hallo allemaal!", "Niels vond dat ik dit ding moets fixen, misschien werkt het nu?", "Ik vergeet vaak dat deze website bestaat, eigenlijk", "De server wacht op jou!", "Mensen zeggen dat ik gaar ben, is dat zo?", "Test, test... Hello World!", "Gekkies Website is terug van nooit weggeweest!", "Dankzij de geweldige reporters Joellizzy en _atheron_!", "Deze website is gebouwd door Joellizzy en Mechmanner!", "Gewoon Gewelidg", "Actueel als wat!", "De enige nieuwsbron die je nodig hebt!", "Gefinancieerd door Gekkoins!", "Gratis Reclame als je hier van een screenshot maakt en in de Gekkies Whatsapp groep gooit!", "Koop je aandelen in de Gekkies Krant nu!"];
                             let gekkiesSpelers = ["Mechmanner", "_atheron_", "Joa04", "Joellizzy", "nijnt", "UbelsFamilie", "serprogame"]
-                            let anderBerichtVariant = [" speelt ook op de Gekkies Server!", " is ook een Gekkie!"]
+                            let anderBerichtVariant = [" speelt ook op de Gekkies Server!", " is ook een Gekkie!", " left the game", " joined the game", " fell from a high place while trying to escape your mom", " died of the lack of Gekkies Kranten"]
                 
                             let randomNumBericht = Math.floor(Math.random() * 2) + 1;
                             
                 
                             if (randomNumBericht === 1) {
                 
-                                let randomBericht = Math.floor(Math.random() * 13);
+                                let randomBericht = Math.floor(Math.random() * 16);
                                 let selectedBericht = bericht[randomBericht];
                 
                                 changer.textContent = `${selectedBericht}`;
@@ -56,7 +56,7 @@
                                 let randomSpeler = Math.floor(Math.random() * 7);
                                 let selectedSpeler = gekkiesSpelers[randomSpeler];
                 
-                                let randomBerichtVaria = Math.floor(Math.random() * 2);
+                                let randomBerichtVaria = Math.floor(Math.random() * 6);
                                 let selectedBerichtVaria1 = anderBerichtVariant[randomBerichtVaria]
                             
                 
