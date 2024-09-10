@@ -19,13 +19,15 @@ h1{
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    width: 100%;
 }
 .navbar a{
     color: rgb(233, 230, 230);
     text-decoration: none;
     padding: 15px;
     display: block;
-    text-align: center;  
+    text-align: center;
+    width:100%;
   
 }
 .navbar a:hover{
