@@ -1,8 +1,5 @@
 body {
-    background-image: url("spawn3.png");
-    position: "sticky";
-    style: "sticky";
-    background-repeat: no-repeat;
+    background-color: white;
 }
 main{ 
     margin-left: 20px; 
