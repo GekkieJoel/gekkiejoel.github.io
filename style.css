@@ -16,7 +16,7 @@ h1{
 .navbar ul{
     list-style-type: none;
     background-color: dimgrey;
-    padding: 0px;
+    padding: 15px;
     margin: 0px;
     overflow: hidden;
     width: 100%;
