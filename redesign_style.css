@@ -51,22 +51,20 @@ body {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 #verticalright {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     justify-content: center;
     align-items: center;
     right: 0;
-    overflow: auto;
 }
 #gekkoin_amount_display {
     display: flex;
