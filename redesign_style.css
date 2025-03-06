@@ -58,7 +58,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#verticalleft {
+#verticalright {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
