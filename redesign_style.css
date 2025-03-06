@@ -93,7 +93,7 @@ body {
 
 #newspaper_container {
     background-color: #f0e8bf;
-    text-align: center;
+   /* text-align: center; */
     padding: 10px;
 
     border-radius: 20px;
