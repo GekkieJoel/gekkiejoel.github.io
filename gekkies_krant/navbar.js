@@ -9,9 +9,9 @@ window.onload = function() {
     let random_chance = Math.floor(Math.random() * 10);
     
     if (random_chance === 7) {
-        logo.src = "../../fotos/logos/gekkis_krant.png";
+        logo.src = "../fotos/logos/gekkis_krant.png";
     } else {
-        logo.src = "../../fotos/logos/gekkies_krant!.png"
+        logo.src = "../fotos/logos/gekkies_krant!.png"
     }
 
 
@@ -32,7 +32,7 @@ window.onload = function() {
 
 function openProfile() {
     document.body.style.backgroundColor = "yellow";
-    window.location.href = "/navbar/profile.html";
+    window.location.href = "navbar/profile.html";
 
 }
 function openNewNewspaper() {
@@ -45,7 +45,7 @@ function openNewNewspaper() {
 
         newest_newspaper = data.latest_newspaper;
 
-        window.location.href = `/kranten/html/${newest_newspaper}.html`;
+        window.location.href = `kranten/html/${newest_newspaper}.html`;
 
     })
 
@@ -53,10 +53,10 @@ function openNewNewspaper() {
     
 }
 function openAllNewspapers() {
-    window.location.href = "/kranten/all_newspapers.html";
+    window.location.href = "kranten/all_newspapers.html";
 }
 function openHomepage() {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
 
 
