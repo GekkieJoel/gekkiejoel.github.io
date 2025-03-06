@@ -42,7 +42,7 @@
 
 body {
     background-color: #FFF8CE;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica;
 }
 
 /* #F4E285, (navbar) 285943, buttons: 8CB369, oude achtergrond: FFF8CE
@@ -77,7 +77,6 @@ body {
     background-color: #555f32;
     border-radius: 20px;
     color: #FFF8CE;
-    font-family: monospace;
     text-align: center;
     width: 20vh;
     height: 10vh;
@@ -125,7 +124,6 @@ body {
     border-radius: 20px;
     text-align: center;
     padding: 1px;
-    font-family: monospace;
     color: whitesmoke;
 }
 #rij1 > div:hover {
@@ -144,7 +142,6 @@ body {
     width: 50%;
     height: 15%;
     color: whitesmoke;
-    font-family: monospace;
 }
 #gek5geopend > button:hover, #insert > button:hover {
     background-color: #464e2a;
