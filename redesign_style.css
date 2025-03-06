@@ -55,6 +55,7 @@ body {
     position: absolute;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 #verticalright {
     background-color: #603F26;
@@ -65,6 +66,7 @@ body {
     justify-content: center;
     align-items: center;
     right: 0;
+    overflow: auto;
 }
 #gekkoin_amount_display {
     display: flex;
