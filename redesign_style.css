@@ -52,7 +52,7 @@ body {
     z-index: -1;
     width: 50px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
 }
@@ -61,7 +61,7 @@ body {
     z-index: -1;
     width: 50px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
     right: 0;
