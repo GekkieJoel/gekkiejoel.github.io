@@ -51,7 +51,7 @@ body {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
-    height: auto;
+    height: 100%;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ body {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
-    height: auto;
+    height: 100%;
     position: absolute;
     justify-content: center;
     align-items: center;
