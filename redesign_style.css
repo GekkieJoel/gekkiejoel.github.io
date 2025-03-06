@@ -96,7 +96,6 @@ body {
 #newspaper_container {
     background-color: #f0e8bf;
    /* text-align: center; */
-    padding: 10px;
 
     border-radius: 20px;
  
@@ -105,6 +104,7 @@ body {
 
     font-family: "Mulish", monospace;
     font-size: 15px;
+    position: center;
     
 }
 
