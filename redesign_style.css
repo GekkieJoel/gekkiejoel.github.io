@@ -58,16 +58,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-#verticalright {
+#verticalleft {
     background-color: #603F26;
     z-index: -1;
     width: 50px;
     height: 100vh;
     position: fixed;
     top: 0;
+    right: 0;
     justify-content: center;
     align-items: center;
-    right: 0;
 }
 #gekkoin_amount_display {
     display: flex;
