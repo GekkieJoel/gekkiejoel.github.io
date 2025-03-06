@@ -1,0 +1,23 @@
+{
+    "Title": "Template Krant",
+    "Author": "Joellizzy",
+
+    "Inleiding": "Kaas inleiding",
+
+    "Alinea1": {
+      "tussenkopje": "Niet verplicht",
+      "Tekst": "aaa"
+    },
+  
+    "Alinea2": {
+      "tussenkopje": "Niet verplicht",
+      "Tekst": "aaa"
+    },
+  
+    "Alinea3": {
+      "tussenkopje": "Niet verplicht",
+      "Tekst": "aaa"
+    },
+  
+   "opslaan": "Uw artikel is nu klaar om in de gekkies krant te komen! Sla deze file op als   een .txt file en stuur het naar Joël Uitslag of in de krantenman discord channel"
+}
