@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/redesign_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="verticalleft"> </div>
+    <div id="verticalright"> </div>
+
+    <div id="nav"> 
+        <button id="logo" onclick="openHomepage()"> <img src="/fotos/logos/gekkies_krant!.png" id="gekkies_krant_logo"></button>
+        <button id="new" onclick="openNewNewspaper()"> <p style="color: whitesmoke; font-family: monospace;">Recentste Krant </p></button>
+        <button id="all" onclick="openAllNewspapers()"> <p style="color: whitesmoke; font-family: monospace;">Alle Kranten </p></button>
+        <button id="waah" onclick="openWaah()"> </button>
+        <div id="gekkoin">
+            <div id="gekkoin_amount_display">
+                <img src="../../fotos/icons/gekkoin.png" id="gekkoin-img" width=40vh> 
+                <p style="margin: 10px; size: 40vh;" id="gekkoin_amount">0</p>
+            </div>
+        </div>
+        <button id="profile" onclick="openProfile()"> </button>
+    </div>
+    <br> <br>
+
+    <div id="newspaper_container"> 
+        <br> <br>
+        <h1 id="title"> Titel van het artikel</h1>
+        <h3 id="author"> Schrijvers naam</h3>
+        <br> 
+        <img src="../../fotos/icons/gekkoin.png">
+        <br> 
+        <p id="inleiding"> uw inleiding</p>
+        <br> 
+        <div id="alinea1"> 
+            <h4 id="tussenkopje1"> Niet verplicht</h4>
+            <p id="tekst1"> aaa</p>
+        </div>
+        <div id="alinea2"> 
+            <h4 id="tussenkopje2"> Niet verplicht</h4>
+            <p id="tekst2"> aaa</p>
+        </div>
+        <div id="alinea3"> 
+            <h4 id="tussenkopje3"> Niet verplicht</h4>
+            <p id="tekst3"> aaa</p>
+        </div>
+        <div id="alinea4"> 
+            <h4 id="tussenkopje4"> Niet verplicht</h4>
+            <p id="tekst4"> aaa</p>
+        </div>
+        <br> <br>
+    </div>
+    
+
+    <script src="../../navbar.js"></script>
+    <script> 
+     window.onload = function() {
+        fetch("../../navbar/profiles.json")
+            .then(response => response.json())
+            .then(data => {
+                //hier houd het het aantal gekkoins bij, dit is voor een later project van mij >:D
+                gekkoin_amount.textContent = data.Joellizzy.gekkoins;
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+        
+        //Verander hier de template.json naar de correcte krant
+        fetch("../json_files/template.json")
+            .then(response => response.json())
+            .then(data => {
+                //Titel van de pagina zelf, auteur en de titel op de pagina zelf
+                document.title = data.Title;
+                document.getElementById("title").textContent = data.Title;
+                document.getElementById("author").textContent = `geschreven door: ${data.Author}`;
+
+                //inleiding
+                document.getElementById("inleiding").textContent = data.Inleiding;
+
+                //alineas
+                document.getElementById("tussenkopje1").textContent = data.Alinea1.tussenkopje;
+                document.getElementById("tekst1").textContent = data.Alinea1.Tekst;
+
+                document.getElementById("tussenkopje2").textContent = data.Alinea2.tussenkopje;
+                document.getElementById("tekst2").textContent = data.Alinea2.Tekst;
+
+                document.getElementById("tussenkopje3").textContent = data.Alinea3.tussenkopje;
+                document.getElementById("tekst3").textContent = data.Alinea3.Tekst;
+
+                document.getElementById("tussenkopje4").textContent = data.Alinea4.tussenkopje
+                document.getElementById("tekst4").textContent = data.Alinea4.Tekst;
+
+                //waarneer je spaties wil toevoegen, gebruik je data.Alinea4.Tekst.replace(/\n\n/g, '<br><br>')
+                //waarneer je een array hebt doe je data.Alinea4.Tekst..join('').replace(/\n\n/g, '<br><br>')
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+    }
+    </script>
+    
+</body>
+</html>

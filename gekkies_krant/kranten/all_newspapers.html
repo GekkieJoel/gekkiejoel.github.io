@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/redesign_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle gekkies kranten</title>
+</head>
+<body>
+    <div id="verticalleft"> </div>
+    <div id="verticalright"> </div>
+
+    <div id="nav"> 
+        <button id="logo" onclick="openHomepage()"> <img src="/fotos/logos/gekkies_krant!.png" id="gekkies_krant_logo"></button>
+        <button id="new" onclick="openNewNewspaper()"> <p style="color: whitesmoke; font-family: monospace;">Recentste Krant </p></button>
+        <button id="all" onclick="openAllNewspapers()"> <p style="color: whitesmoke; font-family: monospace;">Alle Kranten </p></button>
+        <button id="waah" onclick="openWaah()"> </button>
+        <div id="gekkoin">
+            <div id="gekkoin_amount_display">
+                <img src="/fotos/icons/gekkoin.png" id="gekkoin-img" width=40vh> 
+                <p style="margin: 10px; size: 40vh;" id="gekkoin_amount">0<p>
+            </div>
+        </div>
+        <button id="profile" onclick="openProfile()"> </button>
+    </div>
+    
+    <div id="kranten_display"> 
+        <div id="rij1">
+            <div id="gek5geopend"> 
+                <br>
+                <img src="/fotos/logos/gekkies_krant!.png">
+                <br>  <br>
+                <h4> Gekkies 5 Geopend</h4>
+                <button onclick="window.location.href='/kranten/html/eerste_krant.html'"> Lees hier</button>
+            </div>
+
+            <div id="insert"> 
+                <br>
+                <img src="/fotos/logos/gekkis_krant.png">
+                <br>  <br>
+                <h4> Kaas</h4>  
+                <button> Lees hier</button>
+            </div>
+            <div id="insert"> 
+                <br>
+                <img src="/fotos/logos/gekkis_krant.png">
+                <br>  <br>
+                <h4> Kaas</h4>  
+                <button> Lees hier</button>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+
+    <script src="/navbar.js"></script>
+</body>
+</html>
