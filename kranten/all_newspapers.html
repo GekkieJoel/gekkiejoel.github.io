@@ -56,5 +56,17 @@
     </div>
 
     <script src="/navbar.js"></script>
+    <script> 
+    window.onload = function() {
+        fetch("../../navbar/profiles.json")
+            .then(response => response.json())
+            .then(data => {
+                //hier houd het het aantal gekkoins bij, dit is voor een later project van mij >:D
+                gekkoin_amount.textContent = data[profile].gekkoins;
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+        }
+    
+    </script>
 </body>
 </html>
