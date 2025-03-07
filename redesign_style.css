@@ -150,3 +150,28 @@ body {
     width: 50.5%;
     height: 15.5%;
 }
+
+#inlogscherm {
+    background-color: #f0e8bf;
+    text-align: center;
+    padding: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+ 
+    width: 75%;
+    margin: 0 auto;
+
+    font-family: monospace;
+    font-size: 15px;
+}
+#inlogscherm > input, #inlogscherm > button{
+    width: 15%;
+    background-color: #fffcea;
+    border: #603F26;
+    border-radius: 5px;
+}
