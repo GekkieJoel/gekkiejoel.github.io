@@ -31,7 +31,7 @@ window.onload = function() {
 
 
 function openProfile() {
-    document.body.style.backgroundColor = "yellow";
+
     window.location.href = "/navbar/profile.html";
 
 }
