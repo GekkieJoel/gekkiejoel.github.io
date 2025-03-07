@@ -99,7 +99,7 @@ body {
 #newspaper_container {
     background-color: #f0e8bf;
    /* text-align: center; */
-    padding: 0px;
+    padding: 1px;
     border-radius: 20px;
  
     width: 75%;
