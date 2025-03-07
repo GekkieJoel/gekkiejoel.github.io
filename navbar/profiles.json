@@ -2,13 +2,31 @@
     "Joellizzy": {
         "username": "Joellizzy",
         "password": "d6gT",
-        "gekkoins": 10,
+        "gekkoins": 2,
         "ad-free": false
     },
     "Mechmanner": {
         "username": "Mechmanner",
         "password": "p9wR",
-        "gekkoins": 10,
+        "gekkoins": 5,
+        "ad-free": false
+    },
+    "Nijnt": {
+        "username": "Nijnt",
+        "password": "z3uW",
+        "gekkoins": 0,
+        "ad-free": false
+    },
+    "Joa04": {
+        "username": "Joa04",
+        "password": "r6hY",
+        "gekkoins": 0,
+        "ad-free": false
+    },
+    "_atheron_": {
+        "username": "_atheron_",
+        "password": "a4iO",
+        "gekkoins": 0,
         "ad-free": false
     }
 }
