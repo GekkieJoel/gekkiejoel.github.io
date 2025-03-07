@@ -175,3 +175,13 @@ body {
     border: #603F26;
     border-radius: 5px;
 }
+#ad-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
