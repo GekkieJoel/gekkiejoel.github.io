@@ -18,6 +18,7 @@ document.getElementById("inloggen").onclick = function() {
             if (correct_password === password) {
                 console.log("Correct password")
                 localStorage.setItem('profile', username)
+                 window.location.href = "/index.html";
 
             } else {
                 console.log("wrong password")
@@ -34,6 +35,7 @@ document.getElementById("inloggen").onclick = function() {
             if (correct_password === password) {
                 console.log("Correct password")
                 localStorage.setItem('profile', username)
+                 window.location.href = "/index.html";
             } else {
                 console.log("wrong password")
             }
@@ -49,6 +51,7 @@ document.getElementById("inloggen").onclick = function() {
             if (correct_password === password) {
                 console.log("Correct password")
                 localStorage.setItem('profile', username)
+                 window.location.href = "/index.html";
             } else {
                 console.log("wrong password")
             }
@@ -64,6 +67,7 @@ document.getElementById("inloggen").onclick = function() {
             if (correct_password === password) {
                 console.log("Correct password")
                 localStorage.setItem('profile', username)
+                 window.location.href = "/index.html";
             } else {
                 console.log("wrong password")
             }
@@ -79,6 +83,7 @@ document.getElementById("inloggen").onclick = function() {
             if (correct_password === password) {
                 console.log("Correct password")
                 localStorage.setItem('profile', username)
+                 window.location.href = "/index.html";
             } else {
                 console.log("wrong password")
             }
@@ -87,6 +92,7 @@ document.getElementById("inloggen").onclick = function() {
     } else if (username === "uitloggen") {
         localStorage.removeItem('username')
         console.log("removed current profile from your history")
+         window.location.href = "/index.html";
         
     } else {
         console.log("No one found with that name, L")
