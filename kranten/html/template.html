@@ -62,7 +62,7 @@
             .then(response => response.json())
             .then(data => {
                 //hier houd het het aantal gekkoins bij, dit is voor een later project van mij >:D
-                gekkoin_amount.textContent = data.Joellizzy.gekkoins;
+                gekkoin_amount.textContent = data[profile].gekkoins;
             })
             .catch(error => console.error("Error loading JSON:", error));
         
