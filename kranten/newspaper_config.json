@@ -1,7 +1,7 @@
 {
-    "latest_newspaper": "eerste_krant",
+    "latest_newspaper": "terugkeer_gekkoin",
     "all_newspapers": [
-        "eerste_krant", "..."
+        "eerste_krant", "terugkeer_gekkoin"
     ],
     "newspapers_amount": 1
 }
