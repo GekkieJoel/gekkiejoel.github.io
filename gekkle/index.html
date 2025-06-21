@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gekkle</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Luckiest+Guy&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+    <h1 id="title"> Gekkle</h1>
+    <h2 id="info"> Guess a Season</h2>
+    <p id="guess1"> Guess 1: </p>
+     <p id="guess2"> Guess 2: </p>
+     <p id="guess3"> Guess 3: </p>
+     <p id="guess4"> Guess 4: </p>
+
+    <label for="season-select">Choose a season:</label> <br>
+    <select id="season-select" name="season">
+      <option value="">-- Season --</option>
+      <option value="gekkies1">Gekkies 1</option>
+      <option value="gekkies2">Gekkies 2</option>
+      <option value="gekkies3">Gekkies 3</option>
+      <option value="gekkies4">Gekkies 4</option>
+      <option value="gekkies5"> Gekkies 5</option>
+      <option value="gekkiesHardcore"> Gekkies Hardcore</option>
+      <option value="skygekkies5"> Skygekkies 5</option>
+      <option value="creategekkies2025"> Gekkies Create 2025</option>
+    </select>
+    <button id="submit-button">Submit</button>
+<br> <br>
+
+    <div id="final-guess">
+    <label for="player-select">FINAL GUESS (Guess a player):</label> <br>
+    <select id="player-select" name="player">
+      <option value="">--Player--</option>
+      <option value="mechmanner">Mechmanner</option>
+      <option value="joellizzy">Joellizzy</option>
+      <option value="atheron">atheron</option>
+      <option value="joa04">Joa04</option>
+      <option value="UbelsFamilie">UbelsFamilie</option>
+      <option value="nijnt">Nijnt</option>
+      <option value="serprogame">Serprogame</option>
+      <option value="floriandemol">FlorianDemol</option>
+      <option value="daniSou1">DaniSou1</option>
+      <option value="Bloeminpot0_0">Bloeminpot0_0</option>
+    </select>
+    <button id="final-submit-button">Submit</button>
+    </div>
+
+   
+
+
+  </div>
+
+   <div id="endscreen"> 
+      <h2 id="text"> ... </h2>
+      <p id="copyable"> </p>
+      <button id="copy" onclick="copytext()"> 🔗 Share Results </button>
+      <img id="head"> 
+    </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
