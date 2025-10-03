@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stemwijzer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!--icons ≠≠≠≠≠-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=thumb_down" />
+  <link rel="icon" type="image/x-icon" href="images/ui/voter.png">
+
+</head>
+
+<body>
+  <header> 
+    <div class="wrapper" id="progressbarWrapper">
+      <progress class="progress-bar" id="progressbar" value="1" max="8"> </progress>
+    </div>
+    <br>
+    <div class="information">
+
+      <a class="headerButtons" id="back" href="index.html"> 
+        <img src="images/ui/arrow_back.png">
+      </a>
+
+      <h2 class="siteName">Stem<span class="blue">Wijzer</span></h2>
+      <p class="headerButtons" id="remainingStandpunten"> </p>
+    </div>
+    <br>
+  </header>
+
+  <main> 
+    <div class="text" id="standpunt"> 
+      <h2 class="standpuntTitle" id="standpuntTitle"> </h2>
+      <p class="standpuntText" id="standpuntText"> </p>
+    </div>
+
+    <div class="results" id="result">
+        <div id="number1">
+          <img src="images/partijen/cda.png" id="img1">
+          <p id="percentage1"> 0%</p>
+          <p id="partij1Naam"> EEE</p>
+        </div>
+
+        <div id="number2"> 
+          <img src="images/partijen/cda.png" id="img2"> 
+          <p id="percentage2"> 0%</p>
+          <p id="partij2Naam"> EEE</p>
+        </div>
+
+        <div id="number3"> 
+          <img src="images/partijen/cda.png" id="img3"> 
+          <p id="percentage3"> 0%</p>
+          <p id="partij3Naam"> EEE</p>
+        </div>
+    </div>
+
+  </main>
+
+  <footer id="footer">
+    <div class="stellingButtons"> 
+      <button class="eens" onclick="updateScore('eens')"> 
+        <img src="images/ui/thumbs_up.png">
+        <p>Eens</p>
+      </button>
+      
+      <button class="neutraal" id="neutraal" onclick="updateScore('neutraal')"> Geen van Beide </button>
+
+      <button class="oneens" id="oneens" onclick="updateScore('oneens')"> 
+        <span class="material-symbols-outlined">thumb_down</span>
+        <p>Oneens</p>
+      </button>
+
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

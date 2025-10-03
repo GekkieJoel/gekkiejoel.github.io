@@ -1,0 +1,243 @@
+html, body {
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}  
+body::selection {
+    background-color: #424cff;
+    color: white;
+}
+header {
+    background-color: white;
+    margin: 0;
+}
+.information {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper {
+    justify-content: center;
+    display: flex;
+}
+.progress-bar {
+    width: 100%;
+    height: 2vh;
+    appearance: none;
+    transition: all 0.5s ease;
+}
+.progress-bar::-webkit-progress-bar {
+    background-color: rgb(240, 240, 240);
+}
+.progress-bar::-webkit-progress-value {
+    background-color: #424cff;
+    transition: width 0.5s ease;
+}
+.headerButtons {
+    width: 5vh;
+    height: 5vh;
+    justify-content: center;
+    display: flex;
+    padding: 0.4vh;
+    background-color: rgb(223, 221, 221);
+    border-radius: 100%;
+    border: 1px rgb(223, 221, 221);
+    text-align: center;
+    align-items: center;
+    margin: 0 3vh;
+
+    cursor: pointer;
+}
+.headerButtons:hover {
+    filter: brightness(0.9);
+}
+.blue {
+    color: #424cff;
+}
+
+main {
+    background-color: white;
+ 
+
+    justify-content: center;
+    display: flex;
+    margin-top: 5vh;
+
+    flex: 1;
+}
+.text {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3.5vh;
+
+    width: 50%;
+    
+}
+.standpuntTitle {
+    color: #424cff;
+}
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 5vh;
+
+}
+.stellingButtons {
+    display: flex;
+    align-items: center;
+}
+.stellingButtons button {
+    width: 23vh;
+    height: 8vh;
+    border-radius: 15px;
+    margin: 0 2vh;
+    font-family: "Fira Sans", sans-serif;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+
+    font-size: 2.4vh;
+}
+.stellingButtons button p {
+    margin-left: 1vh;
+    font-weight: bold;
+}
+.eens {
+    background-color: rgb(44, 143, 41);
+    color: white;
+    border: 1px rgb(44, 143, 41);
+}
+.oneens {
+    background-color: rgb(224, 50, 50);
+    color: white;
+    border: 1px rgb(224, 50, 50);
+}
+.neutraal {
+    background-color: rgb(189, 186, 186);
+    color: black;
+    border: 1px rgb(189, 186, 186);
+}
+.stellingButtons button:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+.results {
+    display: flex;
+    justify-content: center;
+    display: none;
+    align-items: center;
+
+    width: 70vh;
+    height: 30vh;
+    padding: 2vh;
+    background-color: rgba(241, 241, 241, 1);
+
+    border: 0.5px solid rgba(241, 241, 241, 1);
+    border-radius: 15px;
+}
+.results div {
+    width: 33%;
+    height: 30vh;
+    background-color: rgba(246, 239, 239, 1);
+    border-radius: 15px;
+    margin: 0 2vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.results div:hover {
+    border: 0.5px solid rgba(57, 57, 57, 1);
+    border-radius: 15px;
+}
+.results div img {
+    width: 70%;
+    height: 46%;
+    background-color: rgb(69, 73, 129);
+    border-radius: 100%;
+}
+
+
+/*Starting page :DD*/
+.headerMainPage {
+    display: flex;
+    justify-content: center;
+}
+.startDiv {
+    width: 50vh;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh;
+    background-color: rgba(241, 241, 241, 1);
+
+    border-radius: 15px;
+}
+.startButton {
+    width: 80%;
+    height: 7vh;
+    background-color: #424cff;
+    border: #424cff;
+    border-radius: 15px;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 4vh;
+    font-family: "Fira Sans", sans-serif;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+.startButton:hover {
+    filter: brightness(0.9);
+}
+.startTitle {
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .stellingButtons button{
+    width: 18vh;
+    font-size: 2.2vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .stellingButtons button{
+    width: 15vh;
+    font-size: 2vh;
+  }
+
+  .text {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .stellingButtons button{
+    width: 13vh;
+    font-size: 1.4vh;
+  }
+
+}
+@media only screen and (max-width: 430px) {
+  .stellingButtons button{
+    width: 10vh;
+    font-size: 1.2vh;
+  }
+}
