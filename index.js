@@ -2,26 +2,28 @@ let progressbar = document.getElementById("progressbar");
 let stellingenRemainingText = document.getElementById("remainingStandpunten");
 
 
-let stellingenTitle = ["Spawn Protection", "Munteenheid", "Pvp", "Inwoners spawn", "Eten", "Belasting", "Overheid"];
-let stellingenText = ["Spawn protection moet kleiner worden", "Elke speler mag zijn eigen valuta maken", "Pvp limiteren tot specifieke arena's",
-  "Buitenlanders mogen niet in spawn wonen en moeten zich dus vestigen in ghettos rondom spawn", "Gratis eten is verkrijgbaar op spawn.",
-"Belasting wordt ingevoerd", "De overheid blijft op afstand, maar grijpt in om vrijheid belastende ideeën in te perken en af te straffen."
+let stellingenTitle = ["Spawn Protection", "Munteenheid", "Subsidies", "Pvp", "Spawn", "Machtsscheiding", "Farms op spawn", "Belasting", "Overheid"];
+let stellingenText = ["Spawn protection moet de huidige grootte behouden", "Elke speler is vrij om zijn eigen valuta te maken", "De overheid kan eenmalige subsidies aan bedrijven aanbieden, in ruil voor een klein percentage van de opbrengst van het betreffende bedrijf", 
+  "Er moeten scherpere regels voor PVP worden ingesteld",
+  "Spawn wordt onderverdeeld in kleinere gebieden", "Spelers worden vertegenwoordigd door middel van een Tweede Kamer, die gekozen wordt door middel van partijlijsten", 
+  "Er worden publieke farms opgericht om onder andere samenwerking te stimuleren",
+"Belasting wordt ingevoerd", "De overheid blijft op afstand, maar grijpt in om vrijheid belastende ideeën in te perken en af te straffen"
 ];
 
 let stellingTitleDisplay = document.getElementById("standpuntTitle");
 let stellingTextDisplay = document.getElementById("standpuntText");
 
 let progressbarCurrentProgress = 1;
-let maxStellingen = 7;
+let maxStellingen = stellingenTitle.length;
 
 progressbar.max = maxStellingen;
 
 let partijen = [
-  {name: "VVD", score: 0, color: "#213966", meningen: ["eens","eens","oneens","oneens","oneens","oneens","eens"]},
-  {name: "NSB", score: 0, color: "#e50000ff", meningen: ["oneens","oneens","eens","oneens","eens","oneens","neutraal"]},
-  {name: "CDA", score: 0, color: "#382106", meningen: ["oneens","oneens","neutraal","oneens","oneens","oneens","eens"]},
-  {name: "BBB", score: 0, color: "#50ab4f", meningen: ["oneens","oneens","neutraal","oneens","oneens","oneens","eens"]},
-  {name: "PVB", score: 0, color: "#610814", meningen: ["neutraal","neutraal","neutraal","eens","eens","eens","neutraal"]}
+  {name: "VVD", score: 0, color: "#213966", meningen: ["eens","eens","oneens","oneens","oneens","oneens","eens", "neutraal", "neutraal"]},
+  {name: "NSB", score: 0, color: "#e50000ff", meningen: ["oneens","oneens","eens","oneens","eens","oneens","neutraal", "neutraal", "neutraal"]},
+  {name: "CDA", score: 0, color: "#382106", meningen: ["oneens","oneens","neutraal","oneens","oneens","oneens","eens", "neutraal", "neutraal"]},
+  {name: "BBB", score: 0, color: "#50ab4f", meningen: ["oneens","oneens","neutraal","oneens","oneens","oneens","eens", "neutraal", "neutraal"]},
+  {name: "PVB", score: 0, color: "#610814", meningen: ["neutraal","neutraal","neutraal","eens","eens","eens","neutraal", "neutraal", "neutraal"]}
 ];
 
 window.onload = function() {
