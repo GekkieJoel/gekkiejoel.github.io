@@ -2,7 +2,7 @@ let progressbar = document.getElementById("progressbar");
 let stellingenRemainingText = document.getElementById("remainingStandpunten");
 
 
-let stellingenTitle = ["Spawn Protection", "Munteenheid", "Subsidies", "Pvp", "Spawn", "Machtsscheiding", "Farms op spawn", "Belasting", "Overheid"];
+let stellingenTitle = ["Spawn Protection", "Munteenheid", "Subsidies", "Pvp", "Spawn", "Machtenscheiding", "Farms op spawn", "Belasting", "Overheid"];
 let stellingenText = ["Spawn protection moet de huidige grootte behouden", "Elke speler is vrij om zijn eigen valuta te maken", "De overheid kan eenmalige subsidies aan bedrijven aanbieden, in ruil voor een klein percentage van de opbrengst van het betreffende bedrijf", 
   "Er moeten scherpere regels voor PVP worden ingesteld",
   "Spawn wordt onderverdeeld in kleinere gebieden", "Spelers worden vertegenwoordigd door middel van een Tweede Kamer, die gekozen wordt door middel van partijlijsten", 
@@ -96,3 +96,4 @@ function getTop3() {
   document.getElementById("percentage3").textContent = `${percentage3}%`;
   document.getElementById("partij3Naam").textContent = top3[2].name;
 }
+
